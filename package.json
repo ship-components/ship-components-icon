@@ -1,0 +1,23 @@
+{
+  "name": "react-ship-icon",
+  "version": "1.0.0",
+  "description": "Ship icon fonts and images",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ship-components/react-ship-icon.git"
+  },
+  "keywords": [
+    "ship-components",
+    "icons"
+  ],
+  "author": "corescan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ship-components/react-ship-icon/issues"
+  },
+  "homepage": "https://github.com/ship-components/react-ship-icon#readme"
+}
