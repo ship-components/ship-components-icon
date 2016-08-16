@@ -5,7 +5,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
   // Where to start
   entry: {
-    Checkbox: path.resolve(__dirname, '../../src/Checkbox.js')
+    index: path.resolve(__dirname, '../../src/icon.css')
   },
 
   // Where to output
@@ -19,24 +19,19 @@ module.exports = {
     'classnames': true,
     'react': 'React',
     'react-dom': true,
-    'react-highlight-click': true,
-    'react-outsideclick': true,
     'react-addons-css-transition-group': true
   },
 
   module: {
-    preLoaders: [{
-      test: /\.(jsx?|es6)$/,
-      exclude: /(node_modules|dist)/,
-      include: /src\/.*/,
-      loader: 'eslint'
-    }],
     loaders: [
       // ES6/JSX for App
       {
         test: /\.(jsx?|es6)$/,
         exclude: /node_modules/,
         loader: 'babel'
+      }, {
+       test: /\.(png|svg|jpeg|jpg|ttf|eot|woff)/,
+       loader: 'file?name=[name].[ext]'
       },
       // CSS Modules
       {
@@ -49,22 +44,8 @@ module.exports = {
     ]
   },
 
-  eslint: {
-    // Strict linting enforcing
-    failOnWarning: true
-  },
-
   // CSS Modules
   postcss: [
-    require('postcss-nested'),
-    require('postcss-simple-vars')({
-      variables: function() {
-        return require('../../src/css-variables');
-      }
-    }),
-    require('postcss-color-hex-alpha'),
-    require('postcss-color-function'),
-    require('postcss-calc'),
     require('autoprefixer')
   ],
 

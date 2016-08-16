@@ -3,38 +3,57 @@
  ******************************************************************************/
 
  @font-face {
-  font-family: 'kards-icons';
-    src:url('../../fonts/icons.eot?r4lcaa');
-    src:url('../../fonts/icons.eot?#iefixr4lcaa') format('embedded-opentype'),
-    url('../../fonts/icons.ttf?r4lcaa') format('truetype'),
-    url('../../fonts/icons.woff?r4lcaa') format('woff'),
-    url('../../fonts/icons.svg?r4lcaa#icons') format('svg');
+  font-family: 'ship-components-icons';
+    src:url('./fonts/icons.eot?r4lcaa');
+    src:url('./fonts/icons.eot?#iefixr4lcaa') format('embedded-opentype'),
+    url('./fonts/icons.ttf?r4lcaa') format('truetype'),
+    url('./fonts/icons.woff?r4lcaa') format('woff'),
+    url('./fonts/icons.svg?r4lcaa#icons') format('svg');
   font-weight: normal;
   font-style: normal;
  }
 
  .word:before {
-   background-image: url('../../images/icons/word.png');
+  content: "";
+  background-image: url('./images/word.png');
+  background-size: contain;
+  background-repeat: no-repeat;
  }
 
  .excel:before {
-   background-image: url('../../images/icons/excel.png');
+  content: "excel";
+  background-position: r;
+  background-image: url('./images/excel.png');
+  background-size: contain;
+  background-repeat: no-repeat;
  }
 
  .powerpoint:before {
-   background-image: url('../../images/icons/powerpoint.png');
+  content: "powerpoint";
+  background-position: r;
+  background-image: url('./images/powerpoint.png');
+  background-size: contain;
+  background-repeat: no-repeat;
  }
 
  .office:before {
-   background-image: url('../../images/icons/office.png');
+  content: "office";
+  background-position: r;
+  background-image: url('./images/office.png');
+  background-size: contain;
+  background-repeat: no-repeat;
  }
 
  .pdf:before {
-   background-image: url('../../images/icons/pdf.png');
+  content: "";
+  background-position: center;
+  background-image: url('./images/pdf.png');
+  background-size: contain;
+  background-repeat: no-repeat;
  }
 
  [class^="icon--"], [class*=" icon--"] {
- 	font-family: 'kards-icons' !important;
+ 	font-family: 'ship-components-icons' !important;
  	speak: none;
  	font-style: normal;
  	font-weight: normal;

@@ -60,7 +60,7 @@ module.exports = function(grunt) {
   var serverOptions = assign({}, require('./webpack.config'), {
     plugins: [],
     entry : {
-      bundle: path.resolve(__dirname, '../../examples/index.jsx')
+      bundle: path.resolve(__dirname, '../../examples/index.js')
     },
     output: {
       filename: 'bundle.js'
@@ -88,21 +88,12 @@ module.exports = function(grunt) {
     ]
   });
 
-  // Include any npm modules we need to use babel on here
-  serverOptions.module.loaders.push({
-    test: /\.(jsx?|es6)$/,
-    include: [
-      path.join(__dirname, '../../node_modules/react-highlight-click')
-    ],
-    loader: 'babel'
-  });
-
   grunt.config.set('webpack-dev-server', {
     options: {
       webpack: serverOptions,
       host: 'localhost',
       contentBase: 'examples/',
-      publicPath: '/assets/',
+      publicPath: '/',
       filename: 'bundle.js',
       keepalive: true,
       inline: true,

@@ -1,20 +1,30 @@
-# react-ship-icon
-[React](http://facebook.github.io/react/) icon component. Exports a commonjs module that can be used with [webpack](http://webpack.github.io/) or [browserify](http://browserify.org/). Source is in ES6 and is compiled down to ES5 using [Babel](https://babeljs.io/).
-
-[![Build Status](http://img.shields.io/travis/ship-components/react-ship-checkbox/master.svg?style=flat)](https://travis-ci.org/ship-components/react-ship-checkbox)
-[![Code Quality](https://img.shields.io/codeclimate/github/ship-components/react-ship-checkbox.svg?style=flat)](https://codeclimate.com/github/ship-components/react-ship-checkbox)
-[![Code Coverage](https://img.shields.io/codeclimate/coverage/github/ship-components/react-ship-checkbox.svg?style=flat)](https://codeclimate.com/github/ship-components/react-ship-checkbox)
+# ship-components-icon
+Material Design icons in css module format. Exports a css module that can be used with [webpack](http://webpack.github.io/).
 
 ## Usage
 
-### ES6/JSX (Recommended)
+### ES6/JSX
 The component is written using ES6/JSX therefore Babel is required to directly use it. The below example is based on using [webpack](http://webpack.github.io/) and [babel-loader](https://github.com/babel/babel-loader).
+
+```js
+import icon from 'ship-components-icon';
+
+class Example extends React.Component {
+  render() {
+    return (
+      <div>
+        <span className={icon.games} />
+      </div>
+    );
+  }
+}
+```
 
 ### Webpack Configuration
 This module is designed to be used with webpack but requires a few loaders.
 
 ```shell
-npm install webpack babel-loader css-loader style-loader postcss-loader extract-text-webpack-plugin --save-dev
+npm install webpack babel-loader css-loader style-loader postcss-loader file-loader extract-text-webpack-plugin autoprefixer --save-dev
 ```
 
 Below are is a sample of how to setup the loaders:
@@ -58,7 +68,7 @@ Below are is a sample of how to setup the loaders:
 ## License
 The MIT License (MIT)
 
-Copyright (c) 2015 Isaac Suttell
+Copyright (c) 2015
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
