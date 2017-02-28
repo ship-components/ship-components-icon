@@ -14,23 +14,42 @@
  }
 
  .icon--word:before {
-   background-image: url(word.png);
+  content: "";
+  background-image: url(word.png);
+  background-size: contain;
+  background-repeat: no-repeat;
  }
 
  .icon--excel:before {
-   background-image: url(excel.png);
+  content: "excel";
+  background-position: r;
+  background-image: url(excel.png);
+  background-size: contain;
+  background-repeat: no-repeat;
  }
 
  .icon--powerpoint:before {
-   background-image: url(powerpoint.png);
+  content: "powerpoint";
+  background-position: r;
+  background-image: url(powerpoint.png);
+  background-size: contain;
+  background-repeat: no-repeat;
  }
 
  .icon--office:before {
-   background-image: url(office.png);
+  content: "office";
+  background-position: r;
+  background-image: url(office.png);
+  background-size: contain;
+  background-repeat: no-repeat;
  }
 
  .icon--pdf:before {
-   background-image: url(pdf.png);
+  content: "";
+  background-position: center;
+  background-image: url(pdf.png);
+  background-size: contain;
+  background-repeat: no-repeat;
  }
 
  [class^="icon--"], [class*=" icon--"] {
