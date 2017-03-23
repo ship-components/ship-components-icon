@@ -1,6 +1,9 @@
 # ship-components-icon
 Material Design icons in css module format. Exports a css module that can be used with [webpack](http://webpack.github.io/).
 
+[![npm](https://img.shields.io/npm/v/ship-components-icon.svg?maxAge=2592000)](https://www.npmjs.com/package/ship-components-icon)
+[![devDependencies](https://img.shields.io/david/dev/ship-components/ship-components-icon.svg?style=flat)](https://david-dm.org/ship-components/ship-components-icon?type=dev)
+
 ## Usage
 
 ### ES6/JSX
@@ -64,6 +67,10 @@ Below are is a sample of how to setup the loaders:
 
 1. `npm install`
 2. `npm test`
+
+## History
+* 0.1.1 - Fixes Grunt to build and run the server and cleans up readme file
+* 0.1.0 - Initial
 
 ## License
 The MIT License (MIT)
