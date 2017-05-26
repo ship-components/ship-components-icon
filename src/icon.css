@@ -1901,9 +1901,6 @@
  .star_outline:before {
  	content: "\e262";
  }
- .3d_rotation:before {
- 	content: "\e263";
- }
  .accessibility:before {
  	content: "\e264";
  }
