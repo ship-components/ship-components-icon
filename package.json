@@ -1,6 +1,6 @@
 {
   "name": "ship-components-icon",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Ship icon fonts and images",
   "main": "src/icon.css",
   "scripts": {
@@ -35,6 +35,10 @@
     {
       "name": "Sepand Assadi",
       "email": "sepand.assadi@sony.com"
+    },
+    {
+      "name": "Jared Boone",
+      "email": "jared.boone@sony.com"
     }
   ],
   "devDependencies": {
