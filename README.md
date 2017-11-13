@@ -3,8 +3,8 @@ Material Design icons in css module format. Exports a css module that can be use
 
 ## Usage
 
-### ES6/JSX
-The component is written using ES6/JSX therefore Babel is required to directly use it. The below example is based on using [webpack](http://webpack.github.io/) and [babel-loader](https://github.com/babel/babel-loader).
+### CSS Modules
+The component is a css file that imports fonts and images, therefore some [webpack](http://webpack.github.io/) configuration is needed to use it this way. Below is an example of usage as a CSS Module in a ES2015 class.
 
 ```js
 import icon from 'ship-components-icon';
@@ -21,10 +21,10 @@ class Example extends React.Component {
 ```
 
 ### Webpack Configuration
-This module is designed to be used with webpack but requires a few loaders.
+This module is designed to be used with webpack but requires a few loaders. PostCSS + Autoprefixer is not actually required, but is recommended.
 
 ```shell
-npm install webpack babel-loader css-loader style-loader postcss-loader file-loader extract-text-webpack-plugin autoprefixer --save-dev
+npm install webpack css-loader style-loader file-loader extract-text-webpack-plugin postcss-loader autoprefixer --save-dev
 ```
 
 Below are is a sample of how to setup the loaders:
@@ -37,15 +37,16 @@ Below are is a sample of how to setup the loaders:
   [...]
   module: {
     loaders: [
-      // Setup support for ES6
+      // File loader for images (application icons)
       {
-        test: /\.(jsx?|es6)$/,
-        exclude: /(node_modules|bower_components)/,
-        loader: 'babel'
-      },
-      // Setup support for CSS Modules
+        test: /\.(png|svg|jpeg|jpg)/,
+        include: [/ship-components-icon\/src/],
+        loader: "file-loader?name=images/[name].[ext]"
+      }
+      // CSS loader with CSS Modules + PostCSS
       {
         test: /\.css$/,
+        include: [/ship-components-icon\/src/],
         loader: ExtractTextPlugin.extract('style-loader', 'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss-loader')
       }
     ]
