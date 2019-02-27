@@ -1,4 +1,5 @@
 # ship-components-icon
+
 Material Design icons in css module format. Exports a css module that can be used with [webpack](http://webpack.github.io/).
 
 [![npm](https://img.shields.io/npm/v/ship-components-icon.svg?maxAge=2592000)](https://www.npmjs.com/package/ship-components-icon)
@@ -7,6 +8,7 @@ Material Design icons in css module format. Exports a css module that can be use
 ## Usage
 
 ### ES6/JSX
+
 The component is written using ES6/JSX therefore Babel is required to directly use it. The below example is based on using [webpack](http://webpack.github.io/) and [babel-loader](https://github.com/babel/babel-loader).
 
 ```js
@@ -24,6 +26,7 @@ class Example extends React.Component {
 ```
 
 ### Webpack Configuration
+
 This module is designed to be used with webpack but requires a few loaders.
 
 ```shell
@@ -61,27 +64,33 @@ Below are is a sample of how to setup the loaders:
 }
 ```
 
-### Development
-If you update icons.css (eg with new icons from the upstream source material-design-icons), do not add
-".3d_rotation:before". This is not valid CSS because classes cannot start with a number. 
+## Finding icons
 
-
-## Tests
-
-*There's currently a bug in Jest, so the units tests and they will not run.*
+Icon names may not match what you find on the internet. To find the actual names of the icons you can follow the steps below to start a simple server that includes all of the icons in searchable form.
 
 1. `npm install`
-2. `npm test`
+2. `npm start`
+3. Open [http://localhost:8080](http://localhost:8080)
+
+## Development
+
+If you update icons.css (eg with new icons from the upstream source material-design-icons), do not add
+".3d_rotation:before". This is not valid CSS because classes cannot start with a number.
+
+Icons should be added or removed using [Icomoon](https://icomoon.io/app). In the `src/fonts/` folder there is a file called `selection.json` that can be uploaded to Icomoon, edited and then Icomoon can export all of the updated assets.
 
 ## History
+
+* 1.0.0 - Updated documention and moved out of development
 * 0.1.2 - Removed invalid .3d_rotation:before from icons.css
 * 0.1.1 - Fixes Grunt to build and run the server and cleans up readme file
 * 0.1.0 - Initial
 
 ## License
+
 The MIT License (MIT)
 
-Copyright (c) 2015
+Copyright (c) SHIP
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
