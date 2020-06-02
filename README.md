@@ -63,7 +63,7 @@ Below are is a sample of how to setup the loaders:
 
 ### Development
 If you update icons.css (eg with new icons from the upstream source material-design-icons), do not add
-".3d_rotation:before". This is not valid CSS because classes cannot start with a number. 
+".3d_rotation:before". This is not valid CSS because classes cannot start with a number.
 
 
 ## Tests
@@ -74,6 +74,7 @@ If you update icons.css (eg with new icons from the upstream source material-des
 2. `npm test`
 
 ## History
+* 0.2.0 - Added comment_annotation icon
 * 0.1.2 - Removed invalid .3d_rotation:before from icons.css
 * 0.1.1 - Fixes Grunt to build and run the server and cleans up readme file
 * 0.1.0 - Initial
@@ -81,7 +82,7 @@ If you update icons.css (eg with new icons from the upstream source material-des
 ## License
 The MIT License (MIT)
 
-Copyright (c) 2015
+Copyright (c) SHIP
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
