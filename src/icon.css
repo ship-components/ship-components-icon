@@ -2450,3 +2450,6 @@
  .offline_pin:before {
  	content: "\e31a";
  }
+ .comment_annotation:before {
+ 	content: "\e319";
+ }
