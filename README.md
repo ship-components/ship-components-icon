@@ -12,7 +12,7 @@ Material Design icons in css module format. Exports a css module that can be use
 The component is written using ES6/JSX therefore Babel is required to directly use it. The below example is based on using [webpack](http://webpack.github.io/) and [babel-loader](https://github.com/babel/babel-loader).
 
 ```js
-import icon from 'ship-components-icon';
+import icon from "ship-components-icon";
 
 class Example extends React.Component {
   render() {
@@ -80,11 +80,13 @@ If you update icons.css (eg with new icons from the upstream source material-des
 Icons should be added or removed using [Icomoon](https://icomoon.io/app). In the `src/fonts/` folder there is a file called `selection.json` that can be uploaded to Icomoon, edited and then Icomoon can export all of the updated assets.
 
 ## History
-* 1.1.0 - Added comment_annotation icon
-* 1.0.0 - Updated documention and moved out of development
-* 0.1.2 - Removed invalid .3d_rotation:before from icons.css
-* 0.1.1 - Fixes Grunt to build and run the server and cleans up readme file
-* 0.1.0 - Initial
+
+- 1.2.0 - Added subscription icon for versions
+- 1.1.0 - Added comment_annotation icon
+- 1.0.0 - Updated documention and moved out of development
+- 0.1.2 - Removed invalid .3d_rotation:before from icons.css
+- 0.1.1 - Fixes Grunt to build and run the server and cleans up readme file
+- 0.1.0 - Initial
 
 ## License
 
