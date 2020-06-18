@@ -81,6 +81,7 @@ Icons should be added or removed using [Icomoon](https://icomoon.io/app). In the
 
 ## History
 
+- 1.2.1 - Fixes the missing comment_annotation after adding version icon
 - 1.2.0 - Added subscription icon for versions
 - 1.1.0 - Added comment_annotation icon
 - 1.0.0 - Updated documention and moved out of development

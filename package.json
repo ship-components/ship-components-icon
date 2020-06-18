@@ -1,6 +1,6 @@
 {
   "name": "ship-components-icon",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Ship icon fonts and images",
   "main": "src/icon.css",
   "scripts": {

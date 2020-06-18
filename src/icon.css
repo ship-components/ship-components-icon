@@ -2452,7 +2452,7 @@
   content: "\e31a";
 }
 .comment_annotation:before {
-  content: "\e319";
+  content: "\e31b";
 }
 .subscription:before {
   content: "\e31c";
